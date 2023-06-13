@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Column Layout Methods</title>
+<style>
+  p {
+    padding: 0;
+    margin: 0;
+    font-weight: 700;
+  }
+
+  li {
+    list-style: none;
+  }
+
+  .container {
+    padding: 10px;
+    background-color: gold;
+    text-align: center;
+  }
+
+  .nav-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .nav-container li {
+    padding: 2px;
+  }
+
+  .nav-container a {
+    padding: 10px 16px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+
+  .nav-container a:hover {
+    background-color: #555;
+  }
+
+  .nav-container a.active {
+    background-color: #777;
+  }
+
+  @media (max-width:648px) {
+.nav-container {
+    flex-direction: column;
+    padding: 0;
+    margin: 50px auto;
+}
+
+.nav-container li {
+    padding: 2px;
+    margin-bottom: 2rem;
+}
+}
+
+
+  }
+</style>
+
+</head>
+
+<body>
+  <div class="container">
+    <p>Page Layout Methods</p>
+
+    <ul class="nav-container">
+      <li><a href="./html-table.html">HTML Table</a></li>
+      <li><a href="./inline-block.html">Inline-Block</a></li>
+      <li><a href="./absolute-position.html">Absolute Positioning</a></li>
+      <li><a href="./float.html">Float</a></li>
+      <li><a href="./flex.html">Flexbox</a></li>
+    </ul>
+
+  </div>
+</body>
+
+</html>
